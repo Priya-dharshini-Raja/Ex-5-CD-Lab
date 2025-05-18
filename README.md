@@ -14,7 +14,7 @@ To write a YACC program to recognize the grammar anb where n>=10.
 8.	Enter a string as input and it is identified as valid or invalid.
 # PROGRAM:
 FLEX FILE
-``````
+`````````
 %{
 #include <stdio.h>
 #include <stdlib.h>
@@ -50,9 +50,9 @@ int main() {
 void yyerror(const char *msg) {
     fprintf(stderr, "Syntax error: %s\n", msg);
 }
-````````````
+```````````````
 BISON FILE
-```````````````````
+``````````````````````
 %{
 #include <stdio.h>
 #include <stdlib.h>
@@ -87,7 +87,7 @@ int main() {
 void yyerror(const char *msg) {
     printf("Syntax error: %s\n", msg);
 }
-`````````````````````````
+````````````````````````````
 
 # OUTPUT
 ![image](https://github.com/user-attachments/assets/3a322e1a-d497-486d-8626-f00b3ecf54bc)
